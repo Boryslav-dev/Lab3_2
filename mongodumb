@@ -1,0 +1,10 @@
+use lab2
+
+db.createCollection('seance')
+db.createCollection('client')
+
+db.client.insert({name:"Peter", password:"peter123", IP:"192.38.12", balance:"-45"})
+db.client.insert({name:"Vlad", password:"pgdsb654", IP:"192.38.12", balance:"12"})
+
+db.seance.insert({name:"Peter", in_trafic:"1243", out_trafic:"512"})
+db.seance.insert({name:"Vlad", in_trafic:"2343", out_trafic:"1648"})
